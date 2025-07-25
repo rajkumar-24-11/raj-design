@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+.owl-carousel .owl-item img{width:auto!important;}
+
+
+.ser_box img{border-top-left-radius:10px; border-top-right-radius:10px;}
+
+
+ul.dkbdsvb_about{ margin:20px 0px 0px 0px!important; padding:0px 0px 0px 0px!important;}
+
+ul.dkbdsvb_about li{ list-style:disc!important; position:relative!important; color:#555555!important; font-size:16px!important; line-height:26px!important; padding:2px 0px 2px 0px!important; margin:0px 0px 0px 0px!important; font-weight:500!important; font-family:'Open Sans', sans-serif;}
+
+ul.dkbdsvb_about li:before{background-color:transparent!important;}
+ul.disclist li{list-style:circle!important; margin:0px 0px 0px 20px!important;}
+.profile_img img{vertical-align:middle;}
+.list-style-two a{ vertical-align: bottom; display: inline-block; height: 20px;}
+.list-link-two li a.pdf::before{content: '';}
+.list-link-two li a.pdf{ padding-left: 10px;}
