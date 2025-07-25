@@ -1,0 +1,1732 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body {
+	padding: 10px 0px!important;
+	margin: 0px;
+	font-family: 'Poppins', sans-serif!important;
+	background-color: #e5e5e5;
+}
+.container-w {
+	width: 360px;
+	margin: 10px auto 0px;
+	padding: 0px 0px 20px 0px;
+	background-color: #fff;
+	border: 0px solid #000;
+}
+.pageslider {
+	display: flex;
+}
+.cardtext {
+	color: #656565;
+	font-size: 13px;
+	font-family: 'Poppins', sans-serif;
+	margin: 10px 0px 10px 20px;
+	text-transform: uppercase;
+}
+.owl-dots button:nth-child(4) {
+	display: none!important;
+}
+.VisaIcon {
+	position: absolute;
+	top: 7%;
+	z-index: 9;
+	right: 12%;
+}
+
+.VisaIcon img{width:42px!important; height:30px!important;}
+.CardNo {
+	position: absolute;
+	top: 40%;
+	z-index: 9;
+	font-size: 11px;
+	color: #fff;
+	text-transform: uppercase;
+	left: 10%;
+}
+.NameText {
+	font-size: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	top: 68%;
+	left: 10%;
+	position: absolute;
+	z-index: 9;
+}
+.ExpriDate {
+	font-size: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	top: 68%;
+	right: 10%;
+	position: absolute;
+	z-index: 9;
+}
+.AddNewButton {
+	align-items: center;
+	margin: 20px 0px 20px 0px;
+}
+.btn {
+	z-index: 1;
+	position: relative;
+	text-align: center;
+}
+.btn-add input {
+	border: 1px solid #E58F80;
+	border-radius: 5px;
+	color: #E58F80;
+	padding: 15px 25px;
+	background-color: transparent;
+	font-size: 12px;
+	width: auto;
+	align-items: center;
+	cursor: pointer;
+	width: 50%;
+}
+.UPIText {
+	color: #656565;
+	font-size: 13px;
+	font-family: 'Poppins', sans-serif;
+	margin: 10px 0px 10px 20px;
+	text-transform: uppercase;
+}
+.UPIBOX {
+	border-top: 1px solid #D8D8D8;
+	border-bottom: 1px solid #D8D8D8;
+}
+.UPILink {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	width: 47px;
+	height: 47px;
+	margin: 0px 0px 0px 20px;
+}
+.UPILink a {
+	display: inline-flex;
+	padding: 10px 5px 10px 5px;
+	margin: 10px 0px 10px 0px;
+	align-items: center;
+}
+.BhimText {
+	color: #656565;
+	font-size: 13px;
+	font-family: 'Poppins', sans-serif;
+	margin: 10px 0px 20px 25px;
+	text-transform: uppercase;
+}
+.AppBox {
+	border-top: 0px solid #D8D8D8;
+	padding-bottom: 20px;
+}
+.AppBox h3 {
+	color: #656565;
+	font-size: 13px;
+	font-family: 'Poppins', sans-serif;
+	margin: 10px 0px 10px 20px;
+	text-transform: uppercase;
+	padding: 0px;
+	font-weight: normal;
+}
+.ApplinkBox {
+	display: flex;
+}
+.AppLink {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	width: 47px;
+	height: 47px;
+	margin: 0px 0px 0px 20px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.AppLink a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	color: #151515;
+	font-size: 12px;
+}
+.AppLink a:hover {
+	color: #151515;
+}
+.AppLink img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+.AppBox1 {
+	margin: 0px 25px 0px 0px;
+}
+.AppText {
+	color: #848484;
+	margin: 10px 0px 0px 10px;
+	text-align: center;
+	font-size: 11px;
+	width: 100%;
+}
+.AppText a:hover {
+	color: #848484!important;
+}
+.TotalAmountLabel {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 15px;
+}
+.TotalAmountLabel p {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	color: #DE786A;
+	font-size: 16px;
+	padding: 5px 0px 5px;
+	margin: 0px;
+}
+.TotalAmountLabel span {
+	display: inline-block;
+	margin: 0px 5px 0px 5px;
+}
+.AddnewCard {
+	margin: 0px auto 0px;
+	width: 330px;
+}
+.padding {
+	width: 330px;
+	margin: 0px auto;
+}
+.CardAlone {
+	width: 309px;
+	margin: 0px auto;
+}
+.control-label {
+	color: #5e5e5e!important;
+	font-size: 12px;
+	margin-bottom: 5px!important;
+}
+.text-align {
+	padding: 5px 40px!important;
+}
+.text-align1 {
+	text-align: center!important;
+}
+.form-control:focus {
+	box-shadow: 10px 0px 0px 0px #ffffff !important;
+	border-color: #4ca746
+}
+.containerchk {
+	display: inline-block;
+	position: relative;
+	padding-left: 21px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 12px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-top: 2px;
+	color: #ff6f5c;
+}
+/* Hide the browser's default checkbox */
+.containerchk input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 14px;
+	width: 14px;
+	background-color: #ff6f5c;
+}
+/* On mouse-over, add a grey background color */
+.containerchk:hover input ~ .checkmark {
+	background-color: #ff6f5c;
+}
+/* When the checkbox is checked, add a blue background */
+.containerchk input:checked ~ .checkmark {
+	background-color: #ff6f5c;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* Show the checkmark when checked */
+.containerchk input:checked ~ .checkmark:after {
+	display: block;
+}
+/* Style the checkmark/indicator */
+.containerchk .checkmark:after {
+	left: 5px;
+	top: 1px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/*.owl-item{ width:160px!important;}*/
+
+
+/* NetBanking Select Check Box Start*/
+
+
+.containerchk_chk {
+	display: inline-block;
+	position: relative;
+	padding-left: 0px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 12px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-top: 2px;
+	color: #ff6f5c;
+	
+	right:0px;
+}
+/* Hide the browser's default checkbox */
+.containerchk_chk input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+
+
+.containerchk_chknet {
+	display: inline-block;
+	position: relative;
+	padding-left: 0px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 12px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin-top: 12px;
+	color: #ff6f5c;
+	
+	right:0px;
+}
+/* Hide the browser's default checkbox */
+.containerchk_chknet input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+/* Create a custom checkbox */
+
+
+
+
+.checkmark_chknet {
+	position: absolute;
+	top: -4px;
+	left: 86px;
+	height: 16px;
+	width: 16px;
+	background-color: #ff6f5c;
+	border-radius:3px;
+	opacity:0;
+}
+
+
+
+
+.checkmark_chk {
+	position: absolute;
+	top: -4px;
+	left: 86px;
+	height: 16px;
+	width: 16px;
+	background-color: #ff6f5c;
+	border-radius:3px;
+}
+/* On mouse-over, add a grey background color */
+.containerchk_chk:hover input ~ .checkmark {
+	background-color: #ff6f5c;
+}
+/* When the checkbox is checked, add a blue background */
+.containerchk_chk input:checked ~ .checkmark {
+	background-color: #ff6f5c;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark_chk:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* Show the checkmark when checked */
+.containerchk_chk input:checked ~ .checkmark_chk:after {
+	display: block;
+}
+/* Style the checkmark/indicator */
+.containerchk_chk .checkmark_chk:after {
+	left: 6px;
+	top: 2px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* NetBanking Select Check Box End*/
+.TotalAmountTxt {
+	margin-top: 5px;
+}
+.TotalAmountTxt p {
+	color: #DE786a!important;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+	margin: 0px;
+	font-size: 16px;
+}
+.submitbutton {
+	display: flex;
+}
+.btn2 {
+	z-index: 2;
+	position: relative;
+}
+.btn-usecard {
+	width: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.btn-usecard input {
+	background: linear-gradient(90deg, #FC2A48 -1.81%, #FC6C58 100%);
+	border-radius: 8px;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	font-size: 12px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+.btn-usecard button {
+	background: linear-gradient(90deg, #FC2A48 -1.81%, #FC6C58 100%);
+	border-radius: 8px;
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	font-size: 12px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+.bordernone {
+	border-left: none!important;
+	border-right: none!important;
+	border-top: none!important;
+	border-radius: 0px!important;
+	
+	border-bottom: 1px solid #b0b0b0!important;
+	
+	text-align:center;
+	margin:0px 10px 10px 0px!important;
+	padding:0px 0px 0px 0px!important;
+
+}
+
+
+.input-groupform {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	text-align: center;
+}
+.inputBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 35%;
+	margin: 0px auto;
+}
+.card-button {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	text-align: center;
+	justify-content: center;
+}
+.cardbtn {
+	position: relative;
+	z-index: 1;
+	margin: 10px 5px 0px 0px;
+}
+.cardbtn1 {
+	position: relative;
+	z-index: 1;
+	margin: 10px 0px 0px 0px;
+}
+.cardbtn input {
+	border: 1px solid #e58f80;
+	background-color: transparent;
+	padding: 5px 45px;
+	text-align: center;
+	color: #e58f80;
+	width: 100%;
+	font-size: 12px;
+	border-radius: 5px;
+}
+.cardbtn1 input {
+	border: 1px solid #828282;
+	background-color: #828282;
+	padding: 5px 56px;
+	text-align: center;
+	color: #fff;
+	width: 100%;
+	font-size: 12px;
+	border-radius: 5px;
+}
+.modal-body p {
+	color: #6d6d6d;
+	font-size: 13px;
+	text-align: center;
+	padding: 5px 0px 5px;
+	margin: 0px;
+}
+.modal-body p.banktext {
+	color: #8a8a8a;
+	font-size: 12px;
+}
+.modal-body p.cardtext {
+	color: #de786a;
+	font-size: 10px;
+}
+#myModal {
+	width: 360px;
+	margin: 95px auto 0px auto;
+	padding: 0px 0px 0px 0px!important;
+}
+body .modal-open {
+	padding-right: 0px!important;
+}
+.RoundBox {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	width: 87px;
+	height: 87px;
+	margin: 0px 0px 0px 10px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+.RoundBox a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	color: #151515;
+	font-size: 12px;
+}
+.RoundBox a:hover {
+	color: #151515;
+}
+.RoundBox img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+.SaveTextBox {
+	position: relative;
+	margin: 0px 20px 0px 20px;
+}
+.SaveTextBox p {
+	color: #5e5e5e;
+	font-size: 13px;
+	padding: 5px 0px 5px 0px;
+	margin: 15px 0px 10px 0px;
+}
+.RadioBoxContainer {
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	margin: 10px 0px 10px 0px;
+	padding: 15px 15px 15px 10px;
+}
+.AddnewBtn {
+	margin: 5px 0px 10px 0px;
+	padding: 5px 0px 5px 0px;
+}
+.btnnew {
+	z-index: 1;
+	position: relative;
+}
+.btnnew input {
+	border: 1px solid #e58f80;
+	background-color: #fff;
+	padding: 15px 15px;
+	text-align: center;
+	color: #e58f80;
+	width: 100%;
+	font-size: 12px;
+	border-radius: 5px;
+	width: 100%;
+}
+.font-size13 {
+	font-size: 13px;
+}
+.Vpaaddbox {
+	position: relative;
+	z-index: 1;
+}
+.Vpaaddbox p {
+	color: #5e5e5e;
+	padding: 5px 0px 5px 0px;
+	margin: 0px;
+	font-size: 13px;
+}
+.VPAInputBox {
+	padding: 0px 5px 15px 0px;
+}
+.Vpaborder {
+	border: 1px solid #c7a19c!important;
+}
+.formpadctrl {
+	padding: 10px 10px 10px 10px!important;
+}
+.orangecolor {
+	color: #de786a!important;
+}
+.m-t-6 {
+	margin-top: 60px;
+}
+.m-b-2 {
+	margin-bottom: 20px;
+}
+.BankDetailBox {
+	margin: 20px 0px 10px 0px;
+	padding: 20px 20px 10px 30px;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	width: 100%;
+}
+.Upiid {
+	color: #5f5f5f;
+}
+.Upiid span {
+	font-size: 12px;
+	display: inline-block;
+	margin: 0px 25px 20px 0px;
+	width: 20%;
+}
+.Upiid label {
+	font-size: 13px;
+}
+.displaytext {
+	color: #324067;
+	font-size: 10px;
+	padding: 0px 10px 10px 10px;
+}
+.RefGroup {
+	width: 100%;
+	position: relative;
+	margin: 10px 0px 0px 0px;
+}
+.RefGroup p {
+	color: #5e5e5e;
+	font-size: 13px;
+	padding: 5px 5px 5px 0px;
+	margin: 0px;
+}
+.NetBankingBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	margin: 20px 0px 20px 0px;
+}
+.BankTransferBank {
+	display: flex;
+	align-items: center;
+	vertical-align: middle;
+	margin: 10px 0px 10px 0px;
+}
+.SelectBank {
+	display: flex;
+	margin: 25px 0px 0px 0px;
+}
+.SelectBank p {
+	padding: 5px 0px 5px 0px;
+	margin: 0px;
+	color: #5e5e5e;
+	font-size: 13px;
+}
+.BankText1 {
+	color: #848484;
+	margin: 10px 0px 0px 10px;
+	text-align: center;
+	font-size: 12px;
+	width: 100%;
+	text-transform: uppercase;
+	
+	white-space:pre-line;
+	height: 35px;
+}
+.BankBox {
+	margin: 0px 5px 0px 0px
+}
+select {
+	font-size: 12px!important;
+	color: #616161;
+}
+.udselect {
+	background: #ffffff;
+	border: 1px solid #ACC0CA;
+	border-radius: 4px;
+	color: #000000;
+	padding-right: 40px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 12px;
+	color: #616161;
+}
+button, input, optgroup, select, textarea {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit
+}
+button, select {
+	text-transform: none
+}
+[role=button] {
+cursor:pointer
+}
+select {
+	word-wrap: normal
+}
+select:disabled {
+	opacity: 1
+}
+.form-select {
+	display: block;
+	width: 100%;
+padding:.375rem 2.25rem .375rem .75rem;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: #fff;
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+	background-repeat: no-repeat;
+background-position:right .75rem center;
+	background-size: 16px 12px;
+	border: 1px solid #ced4da;
+border-radius:.25rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none
+}
+.form-select:focus {
+	border-color: #86b7fe;
+	outline: 0;
+box-shadow:0 0 0 .25rem rgba(13,110,253,.25)
+}
+.form-select[multiple], .form-select[size]:not([size="1"]) {
+padding-right:.75rem;
+	background-image: none
+}
+.form-select:disabled {
+	background-color: #e9ecef
+}
+.form-select:-moz-focusring {
+color:transparent;
+text-shadow:0 0 0 #212529
+}
+.form-select-sm {
+padding-top:.25rem;
+padding-bottom:.25rem;
+padding-left:.5rem;
+font-size:.875rem
+}
+.form-select-lg {
+padding-top:.5rem;
+padding-bottom:.5rem;
+	padding-left: 1rem;
+	font-size: 1.25rem
+}
+.udselect span.udselect-extension {
+	color: #616161;
+	background: #fff;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	padding-left: 7px;
+	padding-right: 14px;
+	font-size: 18px;
+	font-weight: normal;
+}
+.udselect span.udselect-extension .fa {
+	margin-left: -23px;
+}
+.NotetextBox {
+	width: 100%;
+}
+.NotetextBox p {
+	color: #324067;
+	padding: 5px 20px 5px 20px;
+	margin: 0px;
+	font-size: 10px;
+}
+.PaymentBox {
+	width: 100%;
+}
+.PaymentBox p {
+	color: #5e5e5e;
+	font-size: 13px;
+	padding: 10px 0px 5px 20px;
+}
+.UPILinkBOX {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin: 0px 0px 0px 20px;
+	padding-bottom: 0px;
+}
+.UPILinkBOX1 {
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	width: 114px;
+	height: 52px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.UPILinkBOX1 a {
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.UPILinkBOX1 img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+.CustomerTextBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+	margin-top: 10px;
+}
+.NotepadIcon img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: middle;
+}
+.CustomerText {
+	position: relative;
+	display: flex;
+}
+.CustomerText p {
+	color: #324067;
+	padding: 5px 5px 5px 5px;
+	margin: 0px;
+	font-size: 10px;
+	text-align: center;
+	font-weight: 300;
+}
+.SendBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #cccccc;
+	padding: 3px 3px;
+	border-radius: 5px;
+}
+.SendBox p {
+	font-size: 11px;
+	color: #fc294a;
+	padding: 5px;
+	margin: 0px;
+	text-transform: uppercase;
+}
+. m-t-10 {
+margin-top:10px;
+}
+.NonIcici {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.NonIcici p {
+	color: #324067;
+	padding: 5px 5px 5px 5px;
+	margin: 0px;
+	font-size: 10px;
+	text-align: center;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	font-weight: 300;
+}
+.BankDetailsBox {
+	padding: 20px 10px 20px 10px;
+	margin: 25px 5px 20px 5px;
+	background: linear-gradient(180deg, #FC6C58 -1.81%, #FC2A48 100%);
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.BankBox1 {
+	margin: 10px 5px 10px 5px;
+	width: 100%;
+	display: flex;
+}
+.BankBox1 p {
+	color: #fff;
+	font-size: 12px;
+	white-space: pre-line;
+}
+.copyLink {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 1px 5px 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.40);
+	margin-top: -5px;
+	text-align: center;
+}
+.copyLink:active {
+	box-shadow: 0 0 6px rgba(257, 47, 73, 1);
+}
+.copyLink a {
+	color: #5f5f5f;
+	font-size: 13px;
+	margin: 0px 0px 0px 5px;
+}
+.copyLink a:hover {
+	color: #5f5f5f;
+	text-decoration: none;
+}
+.TableBorderLess {
+	border-collapse: collapse;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	width: 100%;
+}
+.TableBorderLess td {
+	border: none;
+}
+.TableBorderLess td {
+	color: #fff;
+	font-size: 12px;
+	padding: 0px 0px 25px 0px!important;
+	margin: 0px 0px 0px 0px;
+}
+.TableBorderLess img {
+	margin-right: 5px;
+}
+.TableBorderLess button {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 8px 14px 8px 14px!important;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.40);
+	margin-top: -5px;
+	margin-left: 3px;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	border: none;
+}
+.TableBorderLess button:active {
+	box-shadow: 0 0 6px rgba(257, 47, 73, 1);
+}
+.Account {
+	width: 33%;
+}
+.Accountno {
+	width: 39%;
+}
+.CopyIcon {
+	width: 25%;
+}
+.copyLink img {
+	margin: 0px 5px 0px 0px;
+}
+.NoticeBox {
+	margin: 20px 0px 0px 0px;
+}
+.ImportantText {
+	color: #fc294a;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.ImportantText p {
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+.ImportantText ol {
+	padding: 5px 0px 5px 0px;
+	margin: 0px 0px 0px 20px;
+}
+.ImportantText ol li {
+	padding: 5px 0px 15px 0px;
+	margin: 0px;
+	color: #000;
+	font-size: 10px;
+	font-weight: 300;
+}
+.AlertBox {
+	border: 1px solid #d4d7de;
+	border-radius: 10px;
+	padding: 10px;
+}
+.QuestionBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.QuestionIcon {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	background-color: #fc294a;
+	width: 32px;
+	height: 32px;
+	border-radius: 5px;
+}
+.QuestionIcon img {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.Text2 {
+	color: #fc294a;
+	text-transform: uppercase;
+	font-size: 12px;
+	margin: 0px 0px 10px 0px;
+}
+.Text2 p {
+	text-align: center;
+	padding: 0px;
+	margin: 0px;
+}
+.NoteText {
+	color: #000000;
+	font-size: 10px;
+	font-weight: 300;
+}
+.NoteText p {
+	padding: 5px 5px 5px 5px;
+	margin: 0px;
+	text-align: center;
+}
+.CopyRedBox {
+	position: relative;
+	display: flex;
+}
+.Whatsapp {
+	font-size: 10px;
+	color: #000;
+	font-weight: 300;
+	width: 65%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.Whatsapp p {
+	padding: 5px 5px 5px 5px 5px;
+	margin: 0px;
+}
+.copyLinkRed {
+	margin: -10px 0px 0px 10px;
+	border-radius: 5px;
+	padding: 1px 5px 5px;
+	margin-top: -5px;
+	background: linear-gradient(90deg, #FC2A48 -1.81%, #FC6C58 100%);
+	text-align: center;
+}
+.copyLinkRed:active {
+	box-shadow: 0 0 6px rgba(252, 47, 73, 1)
+}
+.copyLinkRed a {
+	color: #fff;
+	font-size: 13px;
+	margin: 1px 0px 0px 5px;
+	padding: 5px 15px 5px 5px;
+	display: flex;
+}
+.copyLinkRed a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.CopyIcon1 {
+	width: 27%;
+}
+.copyLinkRed img {
+	margin: 3px 5px 0px 0px;
+	vertical-align: middle;
+}
+.WhatsupList {
+	display: flex;
+	ustify-content: center;
+	align-items: center;
+}
+.WhatsupList p {
+	text-align: left;
+}
+.UPIText {
+	text-align: center;
+	color: #848484;
+	padding: 5px 0px 5px;
+	margin: 0px 0px 0px 20px;
+}
+/*Payment Success Screen */
+
+.sucess-box-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 700px;
+}
+.sucess-box-container .Success-close-box {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.sucess-box-container .Success-close-box .close-box {
+	background-color: #fff;
+	color: #5f5f5f;
+	font-size: 13px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 41%;
+	top: 65.5%;
+	border-radius: 5px;
+	padding: 10px 20px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.sucess-box-container .Success-close-box .close-box a {
+	text-decoration: none;
+	color: #5f5f5f;
+}
+.sucess-box-container .Success-close-box .close-box a:hover {
+	text-decoration: none;
+	color: #5f5f5f;
+}
+.sucess-box-container .sucess-box {
+	background: linear-gradient(180deg, #73d36b -1.81%, #459552 100%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+	width: 205px;
+	height: 261px;
+}
+.sucess-box-container .icon-tick {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 35px;
+}
+.sucess-box-container .SucessTittle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.sucess-box-container .SucessText {
+	font-size: 10px;
+	color: #fff;
+	text-transform: capitalize;
+	font-weight: 300;
+	margin: 10px auto;
+	width: 65%;
+	text-align: center;
+}
+/*Payment Failed Screen */
+
+.failed-box-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 700px;
+}
+.failed-box-container .failed-close-box {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.failed-box-container .failed-close-box .close-box {
+	background-color: #fff;
+	color: #5f5f5f;
+	font-size: 13px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 41%;
+	top: 65.5%;
+	border-radius: 5px;
+	padding: 10px 20px;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.failed-box-container .failed-close-box .close-box a {
+	text-decoration: none;
+	color: #5f5f5f;
+}
+.failed-box-container .failed-close-box .close-box a:hover {
+	text-decoration: none;
+	color: #5f5f5f;
+}
+.failed-box-container .failed-box {
+	background: linear-gradient(180deg, #fc2c49 -1.81%, #fc6958 100%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 15px;
+	width: 205px;
+	height: 261px;
+}
+.failed-box-container .icon-close {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 35px;
+}
+.failed-box-container .failedTittle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+	font-size: 30px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.failed-box-container .failedText {
+	font-size: 10px;
+	color: #fff;
+	text-transform: capitalize;
+	font-weight: 300;
+	margin: 10px auto;
+	width: 65%;
+	text-align: center;
+}
+/* Payment Approve Screen */	
+.Payment-box-container {
+	width:100%;
+	height: 700px;
+	padding-top: 45%;
+}
+.PaymentText {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+.PaymentP {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	width: 85%;
+}
+.PaymentP p {
+	font-size: 12px;
+	color: #8a8a8a;
+	padding: 5px 5px 5px 5px!important;
+	line-height: 21px;
+	text-align: center;
+	margin: 0px!important;
+}
+.Payment-box-container .PaymentLoading {
+	background: linear-gradient(180deg, #fc2c49 -1.81%, #fc6958 100%);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 40px;
+	width: 205px;
+	text-align: center;
+	margin: 20px auto;
+	padding: 0px 0px 50px 0px;
+}
+.Payment-box-container .PaymentTime {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 55px;
+	color: #fff;
+	text-transform: uppercase;
+	padding-top: 35px;
+}
+.Payment-box-container .PaymentTime p {
+	margin: 0px 0px 0px 0px!important;
+	padding: 0px!important;
+	font-weight: 600;
+}
+.Payment-box-container .mintext {
+	color: #ffaab0;
+	font-size: 24px;
+	text-transform: lowercase;
+	font-weight: 300;
+	margin: 0px auto;
+	width: 65%;
+	text-align: center;
+}
+.Payment-box-container .mintext p {
+	padding: 0px!important;
+	margin: 0px!important;
+}
+.PaymentApproveText {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.PaymentApproveText p {
+	color: #de786a;
+	font-size: 17px;
+	font-weight: 600;
+	padding: 0px 0px 0px 0px;
+	margin: 0px auto!important;
+	text-align: center;
+	width: 85%;
+	line-height: 24px;
+}
+.AlertTextBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0px 0px 0px;
+}
+.AlertTextBox p {
+	color: #324067;
+	font-size: 10px;
+	font-weight: 300;
+	padding: 0px 0px 0px 0px;
+	margin: 0px auto!important;
+	text-align: center;
+	width: 85%;
+	line-height: 24px;
+}
+.container-w .screen .page .navigate {
+	margin: 20px 0px 0px 20px;
+	padding: 5px;
+	width: 10px;
+	height: 18px;
+	text-align: left;
+	background: url(../images/left-arrow.png) no-repeat left top;
+	cursor: pointer;
+}
+.container-w .screen .page .navpod {
+	margin: 20px 0px 0px 20px;
+	padding: 5px;
+	width: 39px;
+	height: 39px;
+	text-align: left;
+	background: #446DDe url(../images/left_codarrow.png) no-repeat center center;
+	cursor: pointer;
+	border-radius: 10px;
+}
+.container-w .PayTittle {
+	width: 75%;
+	font-weight: 500;
+	font-size: 16px;
+	text-align: center;
+	padding: 5px;
+	margin: 10px 0px 0px 0px;
+	font-family: 'Poppins', sans-serif;
+	color: #446dde;
+	text-transform: uppercase;
+}
+.container-w .title {
+	width: 75%;
+	font-weight: 500;
+	font-size: 16px;
+	text-align: center;
+	padding: 5px;
+	margin: 10px 0px 0px 0px;
+	font-family: 'Poppins', sans-serif;
+	color: #FC294A;
+	text-transform: uppercase;
+}
+.container-w .navigate {
+	margin: 20px 0px 0px 20px;
+	padding: 5px;
+	width: 10px;
+	height: 18px;
+	text-align: left;
+	background: url(../images/left-arrow.png) no-repeat left top;
+	cursor: pointer;
+}
+.container-w .navigate img {
+	cursor: pointer;
+}
+.AddnewCard .VisaIcon {
+	position: absolute;
+	top: 20%;
+	z-index: 9;
+	right: 10%;
+}
+.mt-minus {
+	margin-top: -7.75rem;
+}
+.AddnewCard .CardNo {
+	position: absolute;
+	top: 22%;
+	z-index: 9;
+	font-size: 11px;
+	color: #fff;
+	text-transform: uppercase;
+	left: 15%;
+}
+.AddnewCard .NameText {
+	font-size: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	top: 30%;
+	left: 15%;
+	position: absolute;
+	z-index: 9;
+}
+.AddnewCard .ExpriDate {
+	font-size: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	top: 30%;
+	right: 16%;
+	position: absolute;
+	z-index: 9;
+}
+.CodBox {
+	position: relative;
+}
+.MethodBox-Container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.PaymentMethodBox {
+	margin: 5px 0px 5px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.MethodBox {
+	border: 1px solid #d4d7de;
+	border-radius: 10px;
+	color: #324067;
+	margin-right: 5px;
+	padding: 10px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 163px;
+}
+.MethodBox p {
+	font-size: 12px;
+	color: #324067;
+	font-weight: 600;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+}
+.MethodBox p a {
+	color: #324067;
+	text-decoration: none;
+}
+.MethodBox p a:hover {
+	color: #324067;
+	text-decoration: none;
+}
+.m-t-15 {
+	margin-top: 15px;
+}
+.Width-80 {
+	width: 80%;
+	text-align: center;
+	margin: 15px auto;
+}
+.MethodBox:hover {
+	box-shadow: 10px 15px 28px #C7CCF2;
+}
+.CashBox {
+	background: linear-gradient(90deg, #f5f6fe -1.81%, #e2eaff 100%);
+	width: 314px;
+	min-height: 280px;
+	border-radius: 15px;
+	box-shadow: 10px 15px 28px #b9c5e9;
+	margin: 20px auto;
+}
+.m-b-15 {
+	margin-bottom: 15px;
+}
+.CashTextBox {
+	width: 100%;
+	position: relative;
+	margin: 10px 0px 0px 0px;
+}
+.CashTextBox p {
+	color: #5e5e5e;
+	font-size: 13px;
+	padding: 5px 5px 5px 0px;
+	margin: 0px;
+}
+.mt-7 {
+	margin-top: 70px;
+}
+.card label {
+	font-size: 13px!important;
+	color: #5e5e5e!important;
+}
+.card .form-check label {
+	color: #ff6f5c!important;
+}
+.card input {
+	font-size: 12px!important;
+}
+input[type="text"] {
+	font-size: 12px!important;
+}
+.p-b-20 {
+	padding-bottom: 20px;
+}
+#cardInput {
+	background-image: url(../images/cards.png);
+	background-position: 3px 3px;
+	background-size: 40px 252px; /* 89 x 560 */
+	background-repeat: no-repeat;
+	padding-left: 48px;
+}
+#cardinputtop {
+	background-image: url(../images/cards.png);
+	background-position: 3px 3px;
+	background-size: 40px 252px; /* 89 x 560 */
+	background-repeat: no-repeat;/* padding-left: 48px;*/
+}
+.YearInput label {
+	visibility: hidden;
+}
+/* Credit card validation css*/
+
+label.error-block {
+	color: red;
+	font-size: 11px;
+	display: none!important;
+}
+input.error, textarea.error, select.error {
+	border-color: red;
+}
+input.mismatch, textarea.mismatch, select.mismatch {
+	border-color: red;
+}
+input.valid, textarea.valid, select.valid {
+	border-color: #c7a19c;
+}
+label.error {
+	color: red;
+}
+label.mismatch {
+	border-color: red;
+}
+label.valid {
+	color: green;
+}
+.error {
+	border: 1px solid red!important;
+}
+.addnormal {
+	border: 1px solid #c7a19c!important;
+}
+#cardHolderValue {
+	font-size: 10px!important;
+}
+ @media (max-width: 1024px) {
+.YearInput {
+	margin: 0px 0px 0.3rem 0px;
+}
+.container-w {
+	width: 540px;
+}
+.copyLinkRed {
+	margin-top: 5px;
+	text-align: center
+}
+}
+ @media (max-width: 768px) {
+.YearInput {
+	margin: 0px 0px 0.3rem 0px;
+}
+.container-w {
+	width: 540px;
+}
+.copyLinkRed {
+	margin-top: 5px;
+	text-align: center
+}
+}
+
+
+
+@media only screen and (max-width: 540px) and (min-width: 375px)  {
+	
+	
+	.YearInput {
+	margin: -15px 0px 0.3rem 0px;
+}
+.container-w {
+	width: 375px!important;
+}
+.copyLinkRed {
+	margin-top: 5px;
+	text-align: center
+}
+	
+	
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width:360px) {
+.YearInput {
+	margin: -15px 0px 0.3rem 0px;
+}
+.container-w {
+	width: 360px!important;
+}
+.copyLinkRed {
+	margin-top: 5px;
+	text-align: center
+}
+}
+ @media (max-width: 320px) {
+.YearInput {
+	margin: -15px 0px 0.3rem 0px;
+}
+.container-w {
+	width: 320px!important;
+}
+.copyLinkRed {
+	margin: 5px 0px 0px 0px!important;
+	text-align: center
+}
+.AppBox1 {
+	margin: 0px 10px 0px 0px;
+}
+.RoundBox {
+	margin: 0px 0px 0px 8px;
+}
+.UPILinkBOX {
+	margin: 0px 0px 0px 0px;
+}
+.AddnewCard {
+	width: 320px;
+}
+#myModal {
+	margin: 170px auto 0px auto;
+	width: 305px;
+}
+.checkmark_chk{left:80px;}
+}
+ @media (max-width: 280px) {
+.container-w {
+	width: 280px!important;
+}
+#myModal {
+	width: 260px;
+}
+.AppBox1 {
+	margin: 0px 0px 0px 0px;
+}
+.AddnewCard {
+	width: 260px;
+}
+
+.AddnewCard img{width:260px!important; height:140px!important;}
+
+.VisaIcon img{width:42px!important; height:30px!important;}
+
+.card-body {
+	padding: 0rem;
+}
+.pageslider {
+	margin-top: 30px;
+}
+
+input[type="text"] {
+    font-size: 10px!important;
+}
+#cardNumber {
+    font-size: 12px;
+    text-align: left;
+    letter-spacing: 1px;
+    margin-left: 0px;
+}
+.bd-highlight{ margin-top:10px;}
+.card-holder-content {
+    width: 100%;
+}
+
+
+}

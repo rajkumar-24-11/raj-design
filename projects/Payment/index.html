@@ -1,0 +1,2128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <section class="payment-content">
+        <div class="nav-bg">
+            <div class="container">
+                <div class="row pl-3">
+                    <span class="card_4"><i class="fas fa-chevron-left"></i></span>
+                    <h4 class="navin m-auto"> Checkout</h4>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="container">
+
+
+            <div class="header1">
+                <h5 class="border-bottum"> PAYMENT METHODS</h5>
+            </div>
+
+
+            <div id="myDIV" class="padding-bottum">
+                <div class="w-33">
+                    <a class="single" target="1">
+                        <div class="cardlist">
+                            <div class="cards2 btn active">
+                                <div class="img-sec">
+                                    <img src="assets/images/Cards.png" style="width: 20px;" alt="" class="float-left">
+                                </div>
+                                <div class="con-sec">Cards</div>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </div>
+                <div class="w-33">
+                    <a class="single" target="2">
+                        <div class="cardlist cardlist-center">
+                            <div class="cards2 btn">
+                                <div class="img-sec">
+                                    <img src="assets/images/Net_banking.png" style="width: 20px;" alt="" class="float-left">
+                                </div>
+                                <div class="con-sec">Netbanking</div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="w-33">
+                    <a class="single" target="3">
+                        <div class="cardlist">
+                            <div class="cards2 btn">
+                                <div class="img-sec"> <img src="assets/images/UPI.png" style="width: 20px;" alt="" class="float-left"></div>
+                                <div class="con-sec">UPI</div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="w-33">
+                    <a class="single" target="4">
+                        <div class="cardlist">
+                            <div class="cards2 add-ca btn">
+                                <div class="img-sec"><img src="assets/images/Bank-transfer.png" style="width: 20px;" alt="" class="float-left"></div>
+                                <div class="con-sec">Bank</div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="w-33">
+                    <a class="single" target="5">
+                        <div class="cardlist cardlist-center">
+                            <div class="cards2 add-ca btn">
+                                <div class="img-sec">
+                                    <img src="assets/images/6.png" style="width: 20px;" alt="" class="float-left">
+                                </div>
+                                <div class="con-sec">Wallets</div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+                <div class="w-33">
+                    <a class="single" target="6">
+                        <div class="cardlist">
+                            <div class="cards2 add-ca btn">
+                                <div class="img-sec">
+                                    <img src="assets/images/Cod.png" style="width: 20px;" alt="" class="float-left">
+                                </div>
+                                <div class="con-sec">COD</div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <section class="target_box">
+                <div id="div1" class="nav-pills1 target">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="border-bottum">PAYMENT DETAILS</h4>
+                        </div>
+                    </div>
+                    <div class="row card-2">
+                        <div class="col-12">
+                            <p>Cardholder Name</p>
+                        </div>
+                    </div>
+                    <div class="row card-1">
+                        <div class="col-12">
+                            <input tabindex="1" type="text" class="search-bar cc-name-input" id="card_name" placeholder="Enter Your Name" name="card_name" maxlength="20" required="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Card Number</p>
+                        </div>
+                    </div>
+                    <div class="row card-1">
+                        <div class="col-12">
+                            <input tabindex="2" type="text" class="search-bar cc-number-input" id="card_no" name="card_no" placeholder="Enter Card Number" required="" maxlength="19">
+                            <div class="cc-types">
+                                <img class="cc-types__img cc-types__img--amex">
+                                <img class="cc-types__img cc-types__img--visa">
+                                <img class="cc-types__img cc-types__img--mastercard">
+                                <img class="cc-types__img cc-types__img--disc">
+                                <img class="cc-types__img cc-types__img--genric">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row card-1 expires">
+                        <div class="col-6">
+                            <!-- <input type="text" class="" placeholder="MM / YYYY" id="expires_mmyy" name="cc_expires" maxlength="5" /> -->
+                            <input tabindex="3" type="text" class="search-bar cc-expiry-input" placeholder="mm/yyyy" data-inputmask-alias="mm/yyyy" data-inputmask-inputformat="mm/yyyy" id="card_expiry" name="expiry">
+                        </div>
+                        <div class="col-6">
+                            <!-- <input type="text" class="search-bar" placeholder="CVV" maxlength="3"> -->
+                            <input tabindex="4" type="text" class="search-bar cc-cvc-input" id="card_cvv" name="cvv" placeholder="CVV" maxlength="3">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="space-bottom"> <input type="checkbox" name="vehicle3" value="Boat">
+                                <label for="vehicle3">Securely Save Your Card</label><br><br>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="nav-pills-bottom ">
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="you-title">You have to</p>
+                                <button type="submit" id="credit_card_pay_btn" value="Submit" class="button-color" style="font-size: 20px;"> <!--<sub>Pay</sub>-->  <span class="ml-3 mr-3">Pay INR 549.99</span> <!--<sub>INR</sub>--></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <div id="div2" class="nav-pills1 target" style="display:none">
+                    <div class="row padding-b0ttum1">
+                        <div class="col-12">
+                            <h4 class="border-bottum">SELECT BANK</h4>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <div class="cards1 bank-select" data-value="AXISB">
+                                <div class="cards1-img">
+                                    <img src="assets/images/axis.png" class="img-fluid" style="width: 38px;" alt="">
+                                </div>
+                                <div class="cards1-text">
+                                    AXIS
+                                </div>
+                                <div class="cards1-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="cards1 bank-select" data-value="SBIN">
+                                <div class="cards1-img">
+                                    <img src="assets/images/SBI.png" class="img-fluid" style="width: 38px;" alt="">
+                                </div>
+                                <div class="cards1-text">
+                                    SBI
+                                </div>
+                                <div class="cards1-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <div class="cards1 bank-select" data-value="HDFC">
+                                <div class="cards1-img">
+                                    <img src="assets/images/HDFC.png" class="img-fluid" style="width: 38px;" alt="">
+                                </div>
+                                <div class="cards1-text">
+                                    HDFC
+                                </div>
+                                <div class="cards1-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="cards1 bank-select" data-value="BARB_R">
+                                <div class="cards1-img">
+                                    <img src="assets/images/BOB.png" class="img-fluid" style="width: 38px;" alt="">
+                                </div>
+                                <div class="cards1-text">
+                                    BOB
+                                </div>
+                                <div class="cards1-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-6">
+                            <div class="cards1 bank-select" data-value="UBIN">
+                                <div class="cards1-img">
+                                    <img src="assets/images/Union.png" class="img-fluid" style="width: 38px;" alt="">
+                                </div>
+                                <div class="cards1-text">
+                                    UNION
+                                </div>
+                                <div class="cards1-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="cards1 bank-select" data-value="YESB">
+                                <div class="cards1-img">
+                                    <img src="assets/images/yes_bank.png" class="img-fluid" style="width: 38px;" alt="">
+                                </div>
+                                <div class="cards1-text">
+                                    YES
+                                </div>
+                                <div class="cards1-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row card-2">
+                        <div class="col-12">
+                            <label for="sel1">More Banks</label>
+                            <select class="form-control" id="netBankList">
+                                <option value="">Please Select Bank</option>
+                                <option value='AIRP'>Airtel Payments Bank</option>
+                                <option value='ALLA'>Allahabad Bank</option>
+                                <option value='ANDB'>Andhra Bank</option>
+                                <option value='AXISB'>Axis Bank</option>
+                                <option value='BARB_R'>Bank of Baroda Bank</option>
+                                <option value='CBIN'>Central Bank of India</option>
+                                <option value='CNRB'>Canara Bank</option>
+                                <option value='CORP'>Corporation Bank</option>
+                                <option value='CSBK'>Catholic Syrian Bank</option>
+                                <option value='DCBL'>DCB Bank</option>
+                                <option value='DEUT'>Deutsche Bank</option>
+                                <option value='ESFB'>Equitas Small Finance Bank</option>
+                                <option value='FSFB'>Fincare Small Finance Bank</option>
+                                <option value='HDFC'>HDFC Bank</option>
+                                <option value='IBKL'>IDBI Bank</option>
+                                <option value='IDFB'>IDFC FIRST Bank</option>
+                                <option value='IDIB'>Indian Bank</option>
+                                <option value='INDB'>Indusind Bank</option>
+                                <option value='IOBA'>Indian Overseas Bank</option>
+                                <option value='JAKA'>Jammu and Kashmir Bank</option>
+                                <option value='JSFB'>Jana Small Finance Bank</option>
+                                <option value='KARB'>Karnataka Bank</option>
+                                <option value='KKBK'>Kotak Mahindra Bank</option>
+                                <option value='KVBL'>Karur Vysya Bank</option>
+                                <option value='LAVB_C'>Lakshmi Vilas Bank - Corporate Banking</option>
+                                <option value='LAVB_R'>Lakshmi Vilas Bank - Retail Banking</option>
+                                <option value='MAHB'>Bank of Maharashtra</option>
+                                <option value='NKGS'>NKGSB Co-operative Bank</option>
+                                <option value='ORBC'>Oriental Bank of Commerce</option>
+                                <option value='PMCB'>Punjab & Maharashtra Co-operative Bank</option>
+                                <option value='PSIB'>Punjab & Sind Bank</option>
+                                <option value='PUNB_R'>Punjab National Bank - Retail Banking</option>
+                                <option value='RATN'>RBL Bank</option>
+                                <option value='SBBJ'>State Bank of Bikaner and Jaipur</option>
+                                <option value='SBHY'>State Bank of Hyderabad</option>
+                                <option value='SBIN'>State Bank of India</option>
+                                <option value='SBMY'>State Bank of Mysore</option>
+                                <option value='SBTR'>State Bank of Travancore</option>
+                                <option value='SCBL'>Standard Chartered Bank</option>
+                                <option value='SIBL'>South Indian Bank</option>
+                                <option value='SRCB'>Saraswat Co-operative Bank</option>
+                                <option value='STBP'>State Bank of Patiala</option>
+                                <option value='SVCB'>Shamrao Vithal Co-operative Bank</option>
+                                <option value='TMBL'>Tamilnadu Mercantile Bank</option>
+                                <option value='UBIN'>Union Bank of India</option>
+                                <option value='UCBA'>UCO Bank</option>
+                                <option value='UTBI'>United Bank of India</option>
+                                <option value='YESB'>Yes Bank</option>
+                                
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 youspace">
+                            <p class="you-title">You have to</p>
+                            <button type="submit" value="Submit" class="button-color" id="netbanking_pay_btn" style="font-size: 20px;"> Pay INR  549.99 </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="div3" class="nav-pills1 target" style="display:none">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="new-vpa">
+                                <img src="assets/images/8.png" class="img-fluid img-float" alt="upi">
+                                <h4 class="padding-top">Pay Via New VPA</h4>
+                                <p>You must have a virtual Payment Address</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mt-3">
+                            <h4 class="border-bottum">Saved VPA</h4>
+                        </div>
+                    </div>
+                    <div class="row form_card">
+                        <div class="w-100">
+                            <div class="form-group">
+                                <div class="check">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                    <input type="radio" class="form-check-input upiRadioSelect" value="893949029@ybl" name="upiRadioInput">893949029@ybl
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="check">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                    <input type="radio" class="form-check-input upiRadioSelect" value="893949039@ybl" name="upiRadioInput">893949039@ybl
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="check">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                    <input type="radio" class="form-check-input upiRadioSelect" value="893949049@ybl" name="upiRadioInput">893949049@ybl
+                                    </label>
+                                    </div>
+                                </div>
+                                <div class="check">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                    <input type="radio" class="form-check-input upiRadioSelect" value="893949059@ybl" name="upiRadioInput">893949059@ybl
+                                    </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group card-3 vpa-50 new_upi_box" style="display:none;">
+                                <div class="col-12">
+                                    <input type="text" class="search-bar vpa-box inputname" maxlength="25" id="new_upi_id" value="" placeholder="Enter New VPA">
+                                </div>
+                                <div class="col-12 mt-3 d-flex" style="align-items: baseline;">
+                                    <input type="checkbox" class="checkbox-size" name="vehicle3" value="Boat">
+                                    <label class="ml-2" for="vehicle3">Securely save this VPA for a faster checkout next time.</label>
+                                </div>
+                            </div>
+                            <div class="error_upi w-100" style="display:none;text-align:center">
+                                <p style="color:red; margin:0px;">Please select UPI</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="text-center" style="font-size:18px;">
+                        <a class="" id="add_new_upi"><i class="fas fa-plus-square" style="color:#007bff"></i>  Add new UPI ID</a>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-12 youspace">
+                            <p class="you-title">You have to</p>
+                            <button type="button" value="Submit" id="upi_pay_btn" class="button-color" style="font-size: 20px;">Pay INR 549.99</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="div4" class="nav-pills1 target" style="display:none">
+                    <div id="bank-tranfersec">
+                        <div class="row padding-b0ttum1">
+                            <div class="col-12">
+                                <h4 class="border-bottum">SELECT BANK</h4>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <div class="cards1 bank-transfer bank-select non_icici_bank">
+                                    <div class="cards1-img">
+                                        <img src="assets/images/axis.png" class="img-fluid" style="width: 38px;" alt="">
+                                    </div>
+                                    <div class="cards1-text">
+                                        AXIS
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="cards1 bank-transfer bank-select non_icici_bank">
+                                    <div class="cards1-img">
+                                        <img src="assets/images/SBI.png" class="img-fluid" style="width: 38px;" alt="">
+                                    </div>
+                                    <div class="cards1-text">
+                                        SBI
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <div class="cards1 bank-transfer bank-select non_icici_bank">
+                                    <div class="cards1-img">
+                                        <img src="assets/images/HDFC.png" class="img-fluid" style="width: 38px;" alt="">
+                                    </div>
+                                    <div class="cards1-text">
+                                        HDFC
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="cards1 bank-transfer bank-select icici_bank">
+                                    <div class="cards1-img">
+                                        <img src="assets/images/ICI.png" class="img-fluid" style="width: 38px;" alt="">
+                                    </div>
+                                    <div class="cards1-text">
+                                        ICICI
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <div class="cards1 bank-transfer bank-select non_icici_bank">
+                                    <div class="cards1-img">
+                                        <img src="assets/images/Punjab.png" class="img-fluid" style="width: 38px;" alt="">
+                                    </div>
+                                    <div class="cards1-text">
+                                        Punjab
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="cards1 bank-transfer bank-select non_icici_bank" data-value="SBIN">
+                                    <div class="cards1-img">
+                                        <img src="assets/images/yes_bank.png" class="img-fluid" style="width: 38px;" alt="">
+                                    </div>
+                                    <div class="cards1-text">
+                                        YES
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row card-2">
+                            <div class="col-12">
+                                <div class="mx-2 my-4">
+                                    <div class="form-group w-100">
+                                        <label for="sel1">Select Bank</label>
+                                        <select class="form-control" id="sel_1">
+                            <option value="AIRP">Airtel Payments Bank</option>
+                            <option value="ALLA">Allahabad Bank</option>
+                            <option value="ANDB">Andhra Bank</option>
+                            <option value="BARB_R">Bank of Baroda Bank</option>
+                            <option value="CBIN">Central Bank of India</option>
+                            <option value="CNRB">Canara Bank</option>
+                            <option value="CORP">Corporation Bank</option>
+                            <option value="CSBK">Catholic Syrian Bank</option>
+                            <option value="DCBL">DCB Bank</option>
+                            <option value="DEUT">Deutsche Bank</option>
+                            <option value="ESFB">Equitas Small Finance Bank</option>
+                            <option value="FSFB">Fincare Small Finance Bank</option>
+                            <option value="IBKL">IDBI Bank</option>
+                            <option value="IDFB">IDFC FIRST Bank</option>
+                            <option value="IDIB">Indian Bank</option>
+                            <option value="INDB">Indusind Bank</option>
+                            <option value="IOBA">Indian Overseas Bank</option>
+                            <option value="JAKA">Jammu and Kashmir Bank</option>
+                            <option value="JSFB">Jana Small Finance Bank</option>
+                            <option value="KARB">Karnataka Bank</option>
+                            <option value="KKBK">Kotak Mahindra Bank</option>
+                            <option value="KVBL">Karur Vysya Bank</option>
+                            <option value="LAVB_C">Lakshmi Vilas Bank - Corporate Banking</option>
+                            <option value="LAVB_R">Lakshmi Vilas Bank - Retail Banking</option>
+                            <option value="MAHB">Bank of Maharashtra</option>
+                            <option value="NKGS">NKGSB Co-operative Bank</option>
+                            <option value="ORBC">Oriental Bank of Commerce</option>
+                            <option value="PMCB">Punjab &amp; Maharashtra Co-operative Bank</option>
+                            <option value="PSIB">Punjab &amp; Sind Bank</option>
+                            <option value="PUNB_R">Punjab National Bank - Retail Banking</option>
+                            <option value="RATN">RBL Bank</option>
+                            <option value="SBBJ">State Bank of Bikaner and Jaipur</option>
+                            <option value="SBHY">State Bank of Hyderabad</option>
+                            <option value="SBIN">State Bank of India</option>
+                            <option value="SBMY">State Bank of Mysore</option>
+                            <option value="SBTR">State Bank of Travancore</option>
+                            <option value="SCBL">Standard Chartered Bank</option>
+                            <option value="SIBL">South Indian Bank</option>
+                            <option value="SRCB">Saraswat Co-operative Bank</option>
+                            <option value="STBP">State Bank of Patiala</option>
+                            <option value="SVCB">Shamrao Vithal Co-operative Bank</option>
+                            <option value="TMBL">Tamilnadu Mercantile Bank</option>
+                            <option value="UBIN">Union Bank of India</option>
+                            <option value="UCBA">UCO Bank</option>
+                            <option value="UTBI">United Bank of India</option>
+                            <option value="YESB">Yes Bank</option>
+                            <option selected="" value="">Please Select Bank</option>
+                          </select>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="you-title">You have to</p>
+                                        <button type="button" value="Submit" id="bank_transfer_pay_now" class="button-color" style="font-size: 20px;"> Pay INR 549.99</button>
+                                    </div>
+                                </div>
+
+                                <div class="note-text">
+                                    <p><strong>Note:</strong> After clicking on the button, you will be directed to a secure gateway for payment, After completing the payment process, you will be redirected back to the website to view details of your order.
+                                    </p>
+                                    <h5>or making payment via UPI to bank account?</h5>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="text-center mb-2" style="font-size:14px;">Or Marking Payment via UPI to bank </div>
+                                <div class="ubi-bank" id="bk_opt_upi">
+
+                                    <button type="button" value="Submit" id="bank_transfer_pay_btn" class="button-color mb-0" style="font-size: 20px;"> <img src="assets/images/8.png" alt="" class="img-fluid" style="width: 45PX;"></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                    <div id="non_icici_transfer">
+                        <!-- <div class="w-100 my-3">
+                            <span class="card_4"><i class="fas fa-arrow-circle-left" style="color:#446DDE; font-size: 25px;"></i></span>
+                        </div> -->
+
+                        <div class="w-100 my-3 mx-3 pt-2">
+                            <span class="card_4">
+                                <i class="fas fa-university"></i> Bank transfer</span>
+                        </div>
+
+                        <div class="container card_content9">
+                            <div class="w-100">
+
+
+                                <div class="details-valid">
+                                    <div class="details-icon"> <i class="fas fa-file-alt" style="color: #446DDE;font-size: 18px;"></i>&nbsp; &nbsp;
+                                    </div>
+                                    <div>
+                                        <p>Account details provided below are valid only for the customer: Sample@gmail.com</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="virtual-account">
+                                <h5>Send to bank account only via Virtual Account</h5>
+                            </div>
+
+                            <div class="success-btn">
+                                <p class="">This account is valid only for transfers from any non-icici bank</p>
+                            </div>
+
+
+                        </div>
+                        <div class="row form_card mx-2 my-2 px-1 py-3">
+                            <table class="table bankaccount-details table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td width="35%">Account No: </td>
+                                        <td>DCFE111002020</td>
+                                        <td class="text-right" width="30%"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>IFSC Code: </td>
+                                        <td>ICIC000014</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Type </td>
+                                        <td>Current Account</td>
+                                        <td class="text-right" width="30%"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Name </td>
+                                        <td>Falcon Entertainemnt PVT</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Branch Name: </td>
+                                        <td>ICICI</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Branch: </td>
+                                        <td>PRC Delhi</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="row mx-2 my-4 px-1">
+                            <div class="w-100 imp-box">
+                                <h5 class="anton">Important</h5>
+                                <ol>
+                                    <li>The above is your dedicated account and transfers will be added only on the customer with email address sample@gmail.com</li>
+                                    <li>Transfers can be made only by adding beneficiary type as virtual account in your ICICI bank netbanking login</li>
+                                    <li>You are facing trouble with transfering to the above account please reach out to our customer support</li>
+                                    <li>Please find the below account for transfers from UPI apps like Googlepay, PhonePe, Paytm to bank account and share a screenshot to customer support for adding into your account.</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="row mx-2 my-2">
+                            <div class="virtual-account-1">
+                                <h5>If unable to deposit to above content</h5>
+                            </div>
+                        </div>
+                        <div class="row mx-2">
+                            <div class="question-mark">
+                                <div class="question-icon">
+                                    <span><i class="fas fa-question"></i></span>
+                                </div>
+                                <div class="question-text">
+                                    <p> Facing trouble in depositing or deporting from UPI to bank account depot to below account and share screenshot to our</p>
+                                    <p> whatsapp number <a href="https://api.whatsapp.com/send?phone=+46731214467">+46 731 214 467</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row form_card mx-2 my-2 px-1 py-3">
+                            <table class="table bankaccount-details table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td width="35%">Account No: </td>
+                                        <td>DCFE111002020</td>
+                                        <td class="text-right" width="30%"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>IFSC Code: </td>
+                                        <td>ICIC000014</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Type:</td>
+                                        <td>Current Account</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Name:</td>
+                                        <td>Falcon Entertainemnt Agencies</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Branch: </td>
+                                        <td>RPC Delhi</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="icici_transfer">
+                        <!-- <div class="w-100 my-3">
+                            <span class="card_4"><i class="fas fa-arrow-circle-left" style="color:#446DDE; font-size: 25px;"></i></span>
+                        </div> -->
+                        <div class="w-100 my-3 mx-3 pt-2">
+                            <span class="card_4">
+                                <i class="fas fa-university"></i> Bank transfer</span>
+                        </div>
+
+                        <div class="container card_content9">
+                            <div class="w-100">
+
+
+                                <div class="details-valid">
+                                    <div class="details-icon"> <i class="fas fa-file-alt" style="color: #446DDE;font-size: 18px;"></i>&nbsp; &nbsp;
+                                    </div>
+                                    <div>
+                                        <p>Account details provided below are valid only for the customer: Sample@gmail.com</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="virtual-account">
+                                <h5>Send to bank account only via Virtual Account</h5>
+                            </div>
+
+                            <div class="success-btn">
+                                <p class="">For transaction from ICIC (If your bank is ICICI BANK)</p>
+                            </div>
+
+
+                        </div>
+                        <div class="row form_card mx-2 my-2 px-1 py-3">
+                            <table class="table bankaccount-details table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td width="35%">Account No: </td>
+                                        <td>DCFE111002020</td>
+                                        <td class="text-right" width="30%"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>IFSC Code: </td>
+                                        <td>ICIC000014</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Type: </td>
+                                        <td>Current Account</td>
+                                        <td class="text-right" width="30%"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Name: </td>
+                                        <td>Falcon Entertainemnt PVT</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Branch Name: </td>
+                                        <td>ICICI</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Branch: </td>
+                                        <td>PRC Delhi</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="row mx-2 my-4 px-1">
+                            <div class="w-100 imp-box">
+                                <h5 class="anton">Important</h5>
+                                <ol>
+                                    <li>The above is your dedicated account and transfers will be added only on the customer with email address sample@gmail.com</li>
+                                    <li>Transfers can be made only by adding beneficiary type as virtual account in your ICICI bank netbanking login</li>
+                                    <li>You are facing trouble with transfering to the above account please reach out to our customer support</li>
+                                    <li>Please find the below account for transfers from UPI apps like Googlepay, PhonePe, Paytm to bank account and share a screenshot to customer support for adding into your account.</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <div class="row mx-2 my-2">
+                            <div class="virtual-account-1">
+                                <h5>If unable to deposit to above content</h5>
+                            </div>
+                        </div>
+                        <div class="row mx-2">
+                            <div class="question-mark">
+                                <div class="question-icon">
+                                    <span><i class="fas fa-question"></i></span>
+                                </div>
+                                <div class="question-text">
+                                    <p> Facing trouble in depositing or deporting from UPI to bank account depot to below account and share screenshot to our</p>
+                                    <p> whatsapp number <a href="https://api.whatsapp.com/send?phone=+46731214467">+46 731 214 467</a></p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row form_card mx-2 my-2 px-1 py-3">
+                            <table class="table bankaccount-details table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td width="35%">Account No: </td>
+                                        <td>DCFE111002020</td>
+                                        <td class="text-right" width="30%"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>IFSC Code: </td>
+                                        <td>ICIC000014</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Type:</td>
+                                        <td>Current Account</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Name:</td>
+                                        <td>Falcon Entertainemnt Agencies</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Branch: </td>
+                                        <td>RPC Delhi</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div id="upi_transfer">
+                        <!-- <div class="w-100 my-3">
+                            <span class="card_4"><i class="fas fa-arrow-circle-left" style="color:#446DDE; font-size: 25px;"></i></span>
+                        </div> -->
+
+                        <div class="w-100 my-3 mx-3 pt-2">
+                            <span class="card_4">
+                                <i class="fas fa-university"></i> Bank transfer</span>
+                        </div>
+                        <div class="container card_content9">
+                            <div class="w-100">
+
+
+                                <div class="details-valid">
+                                    <div class="details-icon"> <i class="fas fa-file-alt" style="color: #446DDE;font-size: 18px;"></i>&nbsp; &nbsp;
+                                    </div>
+                                    <div>
+                                        <p>Account details provided below are valid only for the customer: Sample@gmail.com</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="virtual-account">
+                                <h5>Transfer to bank via upi or other methods</h5>
+                            </div>
+
+
+                            <div class="row mx-2">
+                                <div class="question-mark">
+                                    <div class="question-icon">
+                                        <span><i class="fas fa-question"></i></span>
+                                    </div>
+                                    <div class="question-text">
+                                        <p> Facing trouble in depositing or deporting from UPI to bank account depot to below account and share screenshot to our</p>
+                                        <p> whatsapp number <a href="https://api.whatsapp.com/send?phone=+46731214467">+46 731 214 467</a></p>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="row form_card mx-2 my-2 px-1 py-3">
+                            <table class="table bankaccount-details table-borderless">
+                                <tbody>
+                                    <tr>
+                                        <td width="35%">Account No: </td>
+                                        <td>DCFE111002020</td>
+                                        <td class="text-right" width="30%"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>IFSC Code: </td>
+                                        <td>ICIC000014</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Type: </td>
+                                        <td>Current Account</td>
+                                        <td class="text-right" width="30%"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Name: </td>
+                                        <td>Falcon Entertainemnt PVT</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Branch Name: </td>
+                                        <td>ICICI</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Branch: </td>
+                                        <td>PRC Delhi</td>
+                                        <td class="text-right"><button class="btn p-1 copyToClipboard" style="font-size: 11px;"><i class="far fa-clone"></i> <span>Copy</span></button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="row mx-2 my-4 px-1 py-4">
+                            <div class="w-100 imp-box">
+                                <h5 class="anton">Important</h5>
+                                <ol>
+                                    <li>The above is your dedicated account and transfers will be added only on the customer with email address sample@gmail.com</li>
+                                    <li>Transfers can be made only by adding beneficiary type as virtual account in your ICICI bank netbanking login</li>
+                                    <li>You are facing trouble with transfering to the above account please reach out to our customer support</li>
+                                    <li>Please find the below account for transfers from UPI apps like Googlepay, PhonePe, Paytm to bank account and share a screenshot to customer support for adding into your account.</li>
+                                </ol>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+                <div id="div5" class="nav-pills1 target" style="display:none">
+                    <div class="row padding-b0ttum1">
+                        <div class="col-12">
+                            <h4 class="border-bottum">SELECT WALLETS</h4>
+                        </div>
+                    </div>
+
+                    <div class="accordion" id="wallet-sec">
+                        <div class="card mb-3">
+                            <div class="card-header" id="faqhead1">
+                                <a href="#" class="btn btn-header-link" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1"> <img src="assets/images/Google_pay.png" alt="" class="img-fluid" style="width: 40px;"><span class="ml-3">Google Pay</span></a>
+                            </div>
+
+                            <div id="faq1" class="collapse show" aria-labelledby="faqhead1" data-parent="#wallet-sec">
+                                <div class="card-body">
+
+                                    <div class="row mb-4">
+                                        <div class="col-12">
+                                            <h4 class="border-bottum">Saved VPA</h4>
+                                        </div>
+
+                                        <div class="w-100 form_card">
+                                            <div class="w-100">
+                                                <div class="form-group">
+                                                    <div class="check">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input upiRadioSelect" value="893949029@ybl" name="upiRadioInput">893949029@ybl
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="check">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input upiRadioSelect" value="893949039@ybl" name="upiRadioInput">893949039@ybl
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="check">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input upiRadioSelect" value="893949049@ybl" name="upiRadioInput">893949049@ybl
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="check">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input upiRadioSelect" value="893949059@ybl" name="upiRadioInput">893949059@ybl
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group card-3 vpa-50 new_upi_box" style="display:none;">
+                                                    <div class="col-12">
+                                                        <input type="text" class="search-bar vpa-box inputname" maxlength="25" id="new_gupi_id" value="" placeholder="Enter New VPA">
+                                                    </div>
+                                                    <div class="col-12 mt-3 d-flex" style="align-items: baseline;">
+                                                        <input type="checkbox" class="checkbox-size" name="vehicle3" value="Boat">
+                                                        <label class="ml-2" for="vehicle3">Securely save this VPA for a faster checkout next time.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="error_upi w-100" style="display:none;text-align:center">
+                                                    <p style="color:red; margin:0px;">Please select UPI</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="w-100 text-center" style="font-size:18px;">
+                                            <a class="" id="add_new_gupi"><i class="fas fa-plus-square" style="color:#007bff"></i>  Add new UPI ID</a>
+                                        </div>
+
+                                        <div class="row text-center w-100 mx-3 mt-4">
+                                            <button type="button" class="btn btn-primary btn-block justify-content-around" id="upi_gpay_btn">
+                                                <!-- <span>505.00</span>&nbsp; &nbsp; &nbsp;--><span>Pay Now</span>
+                                             </button>
+                                        </div>
+
+                                        <div class="row text-center w-100 mx-3 mt-4">
+                                            <div class="col-md-12 need-help">
+                                                <p>Need Help:</p>
+                                                <p>How to find my UPI ID?<a href="#"> Click Here</a></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row text-center w-100 mx-3 mt-4">
+                                            <div class="col-md-12">
+                                                <h4 class="or-text w-100">
+                                                    OR
+                                                </h4>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                    <table style="width: 100%;">
+                                        <tr>
+                                            <td class="tab">UPI</td>
+                                            <td class="tab">8939467767@ybl</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tab">NAME</td>
+                                            <td class="tab">Antony</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tab">BANK</td>
+                                            <td class="tab">Central Bank of India</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tab">BANK</td>
+                                            <td class="tab">Central Bank of India</td>
+                                        </tr>
+
+                                    </table>
+
+                                    <div class="col-md-12 p-0">
+                                        <p class="tab-font mt-4">Enter your Google pay associated phone number Account Name reference id / Transaction reference (after successful transaction).</p>
+                                    </div>
+
+                                    <div class="form-group card-3 vpa-50" style="">
+                                        <div class="col-12"> <input type="text" class="search-bar vpa-box inputname" maxlength="25" id="new_upi_id" value="" placeholder="Enter Reference Number"> </div>
+                                        <div class="col-12 mt-3 d-flex" style="align-items: baseline;">
+                                            <input type="checkbox" class="checkbox-size" name="vehicle3" value="Boat">
+                                            <label class="ml-2" for="vehicle3">Securely save this VPA for a faster checkout next time.</label> </div>
+                                    </div>
+
+                                    <!-- <div class="row card-3">
+                                        <div class="col-12 mt-2">
+                                            <input class="search-bar vpa-box" id="gpay_ref_no" value="" placeholder="Enter Reference Number">
+                                        </div>
+                                    </div> -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" id="faqhead2">
+                                <a href="#" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq2" aria-expanded="true" aria-controls="faq2"><img src="assets/images/Phone_pe.png" alt="" class="img-fluid" style="width: 40px;"><span class="ml-3">Phone Pay</span></a>
+                                </a>
+                            </div>
+
+                            <div id="faq2" class="collapse in" aria-labelledby="faqhead2" data-parent="#wallet-sec">
+                                <div class="card-body">
+
+                                    <div class="row mb-4">
+                                        <div class="col-12 mt-3">
+                                            <h4 class="border-bottum">Saved VPA</h4>
+                                        </div>
+
+                                        <div class="w-100 form_card py-4">
+                                            <div class="w-100">
+                                                <div class="form-group">
+                                                    <div class="check">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input upiRadioSelect" value="893949029@ybl" name="upiRadioInput">893949029@ybl
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="check">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input upiRadioSelect" value="893949039@ybl" name="upiRadioInput">893949039@ybl
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="check">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input upiRadioSelect" value="893949049@ybl" name="upiRadioInput">893949049@ybl
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="check">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input upiRadioSelect" value="893949059@ybl" name="upiRadioInput">893949059@ybl
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group card-3 vpa-50 new_upi_box" style="display:none;">
+                                                    <div class="col-12">
+                                                        <input type="text" class="search-bar vpa-box inputname" maxlength="25" id="new_pupi_id" value="" placeholder="Enter New VPA">
+                                                    </div>
+                                                    <div class="col-12 mt-3 d-flex" style="align-items: baseline;">
+                                                        <input type="checkbox" class="checkbox-size" name="vehicle3" value="Boat">
+                                                        <label class="ml-2" for="vehicle3">Securely save this VPA for a faster checkout next time.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="error_upi w-100" style="display:none;text-align:center">
+                                                    <p style="color:red; margin:0px;">Please select UPI</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="w-100 text-center" style="font-size:18px;">
+                                            <a class="" id="add_new_pupi"><i class="fas fa-plus-square" style="color:#007bff"></i>  Add new UPI ID</a>
+                                        </div>
+
+                                        <div class="row text-center w-100 mx-3 mt-4">
+                                            <button type="button" class="btn btn-primary btn-block justify-content-around" id="upi_ppay_btn">
+                                                 <span>Pay Now</span>
+                                             </button>
+                                        </div>
+
+                                        <div class="row text-center w-100 mx-3 mt-4">
+                                            <div class="col-md-12 need-help">
+                                                <p>Need Help:</p>
+                                                <p>How to find my UPI ID?<a href="#"> Click Here</a></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row text-center w-100 mx-3 mt-4">
+                                            <div class="col-md-12">
+                                                <h4 class="or-text w-100">
+                                                    OR
+                                                </h4>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                    <table style="width: 100%;">
+                                        <tr>
+                                            <td class="tab">UPI</td>
+                                            <td class="tab">8939467767@icicibank</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tab">NAME</td>
+                                            <td class="tab">Antony</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tab">BANK</td>
+                                            <td class="tab">Central Bank of India</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tab">BANK</td>
+                                            <td class="tab">Central Bank of India</td>
+                                        </tr>
+
+                                    </table>
+                                    <div class="col-md-12 p-0">
+                                        <p class="tab-font">Enter your Phone pay associated phone number Account Name reference id / Transaction reference (after successful transaction).</p>
+                                    </div>
+
+                                    <div class="form-group card-3 vpa-50" style="">
+                                        <div class="col-12"> <input type="text" class="search-bar vpa-box inputname" maxlength="25" id="new_upi_id" value="" placeholder="Enter Reference Number"> </div>
+                                        <div class="col-12 mt-3 d-flex" style="align-items: baseline;">
+                                            <input type="checkbox" class="checkbox-size" name="vehicle3" value="Boat">
+                                            <label class="ml-2" for="vehicle3">Securely save this VPA for a faster checkout next time.</label> </div>
+                                    </div>
+
+                                    <!-- <div class="row card-3">
+                                        <div class="col-12 mt-2">
+                                            <input class="search-bar vpa-box" id="cc" value="" placeholder="Enter Reference Number">
+                                        </div>
+                                    </div> -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3">
+                            <div class="card-header" id="faqhead3">
+                                <a href="javascript:void(0)" class="btn btn-header-link collapsed" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3"><img src="assets/images/paytm_icon.png" alt="" class="img-fluid" style="width: 40px;"><span class="ml-3">Paytm</span></a>
+                            </div>
+
+                            <div id="faq3" class="collapse in" aria-labelledby="faqhead3" data-parent="#wallet-sec">
+                                <div class="card-body">
+
+                                    <div class="row mb-4">
+                                        <div class="col-12 mt-3">
+                                            <h4 class="border-bottum">Saved VPA</h4>
+                                        </div>
+
+                                        <div class="w-100 form_card py-4">
+                                            <div class="w-100">
+                                                <div class="form-group">
+                                                    <div class="check">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input upiRadioSelect" value="893949029@ybl" name="upiRadioInput">893949029@ybl
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="check">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input upiRadioSelect" value="893949039@ybl" name="upiRadioInput">893949039@ybl
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="check">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input upiRadioSelect" value="893949049@ybl" name="upiRadioInput">893949049@ybl
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="check">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                        <input type="radio" class="form-check-input upiRadioSelect" value="893949059@ybl" name="upiRadioInput">893949059@ybl
+                                                        </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group card-3 vpa-50 new_upi_box" style="display:none;">
+                                                    <div class="col-12">
+                                                        <input type="text" class="search-bar vpa-box inputname" maxlength="25" id="new_ptupi_id" value="" placeholder="Enter New VPA">
+                                                    </div>
+                                                    <div class="col-12 mt-3 d-flex" style="align-items: baseline;">
+                                                        <input type="checkbox" class="checkbox-size" name="vehicle3" value="Boat">
+                                                        <label class="ml-2" for="vehicle3">Securely save this VPA for a faster checkout next time.</label>
+                                                    </div>
+                                                </div>
+                                                <div class="error_upi w-100" style="display:none;text-align:center">
+                                                    <p style="color:red; margin:0px;">Please select UPI</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="w-100 text-center" style="font-size:18px;">
+                                            <a class="" id="add_new_ptupi"><i class="fas fa-plus-square" style="color:#007bff"></i>  Add new UPI ID</a>
+                                        </div>
+
+                                        <div class="row text-center w-100 mx-3 mt-4">
+                                            <button type="button" class="btn btn-primary btn-block justify-content-around" id="upi_ptpay_btn">
+                                                 <span>Pay Now</span>
+                                             </button>
+                                        </div>
+
+                                        <div class="row text-center w-100 mx-3 mt-4">
+                                            <div class="col-md-12 need-help">
+                                                <p>Need Help:</p>
+                                                <p>How to find my UPI ID?<a href="#"> Click Here</a></p>
+                                            </div>
+                                        </div>
+
+                                        <div class="row text-center w-100 mx-3 mt-4">
+                                            <div class="col-md-12">
+                                                <h4 class="or-text w-100">
+                                                    OR
+                                                </h4>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                    <table style="width: 100%;">
+                                        <tr>
+                                            <td class="tab">UPI</td>
+                                            <td class="tab">8939467767@paytm</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tab">NAME</td>
+                                            <td class="tab">Antony</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tab">BANK</td>
+                                            <td class="tab">Central Bank of India</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tab">BANK</td>
+                                            <td class="tab">Central Bank of India</td>
+                                        </tr>
+
+                                    </table>
+                                    <div class="col-md-12 p-0">
+                                        <p class="tab-font">Enter your Paytm pay associated phone number Account Name reference id / Transaction reference (after successful transaction).</p>
+                                    </div>
+
+                                    <div class="form-group card-3 vpa-50" style="">
+                                        <div class="col-12"> <input type="text" class="search-bar vpa-box inputname" maxlength="25" id="new_upi_id" value="" placeholder="Enter Reference Number"> </div>
+                                        <div class="col-12 mt-3 d-flex" style="align-items: baseline;">
+                                            <input type="checkbox" class="checkbox-size" name="vehicle3" value="Boat">
+                                            <label class="ml-2" for="vehicle3">Securely save this VPA for a faster checkout next time.</label> </div>
+                                    </div>
+
+                                    <!-- <div class="row card-3">
+                                        <div class="col-12 mt-2">
+                                            <input class="search-bar vpa-box" id="cc" value="" placeholder="Enter Reference Number">
+                                        </div>
+                                    </div> -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-12 youspace">
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div id="div6" class="nav-pills1 target" style="display:none">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="border-bottum">ENTER ADDRESS DETAILS</h4>
+                        </div>
+                    </div>
+                    <div class="row card-2">
+                        <div class="col-12">
+                            <p>City</p>
+                        </div>
+                    </div>
+                    <div class="row card-1">
+                        <div class="col-12">
+                            <input type="text" class="search-bar type-text" id="cod_city" placeholder="Enter Your City">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Pincode</p>
+                        </div>
+                    </div>
+                    <div class="row card-1">
+                        <div class="col-12">
+                            <input class="search-bar type-number" id="cod_pin" value="" placeholder="Enter Your Pincode" maxlength="7">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Reference ID</p>
+                        </div>
+                    </div>
+                    <div class="row card-3">
+                        <div class="col-12">
+                            <input class="search-bar inputname" maxlength="25" id="cod_address" value="" placeholder="Enter Reference ID">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 youspace">
+                            <p class="you-title">You have to</p>
+                            <button type="button" id="cod_pay_btn" value="Submit" class="button-color" style="font-size: 20px;"> <span>Pay With Cash</span> </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="assets/js/jquery.inputmask.bundle.min.js"></script>
+
+    <script type="text/javascript">
+        (function() {
+            var datepicker_options, inputmask_options;
+
+            datepicker_options = {
+                altFormat: "mm/yyyy",
+                // appendText: "(dd/mm/yyyy)"
+                dateFormat: "mm/yyyy",
+                // defaultDate: +1
+                yearRange: "1000:3000",
+                changeMonth: true,
+                changeYear: true,
+                color: '#999'
+            };
+
+            inputmask_options = {
+                mask: "99/9999",
+                alias: "date",
+                placeholder: "mm/yyyy",
+                insertMode: true,
+                color: '#999'
+            };
+
+            $("#card_expiry").inputmask({
+                // alias: "date", 
+                // insertMode: "true",
+                color: '#999',
+                yearrange: {
+                    minyear: 2021,
+                    maxyear: 3000
+                }
+            });
+
+        }).call(this);
+        $('body').on('click', '.cards1', function() {
+            $("#netBankList").val($(this).data("value"));
+        });
+
+        $('body').on('change', '#netBankList', function() {
+            let val = $(this).val();
+            $('.active').removeClass('active');
+            $('.cards1[data-value=' + val + ']').addClass('active');
+
+
+
+        });
+
+        $('body').on('click', '#netbanking_pay_btn', function() {
+            //alert('please select bank');
+            var selectedBank = $('#netBankList').val()
+            if (selectedBank == '') {
+                alert('please select bank');
+                $('select#netBankList').css('border', '1px solid red');
+
+            } else {
+                console.log(selectedBank);
+            }
+        });
+
+        $('body').on('click', '.bank-select', function() {
+            $('#netBankList').css('border', '1px solid transparent');
+        });
+
+
+
+        $('.bank-selection').hide();
+        $('body').on('click', '.toggle-bank', function() {
+            $('.bank-selection').toggle();
+        });
+        $('body').on('click', '.bank-selection ul li', function() {
+            $('div.bank-selection').toggle();
+            $('.select-bank').removeClass('active');
+        });
+        $('body').on('click', '.cards1', function() {
+            $('.cards1').removeClass('active');
+            $(this).addClass('active');
+            $('div.cards1-icon').find('i').removeClass('active');
+            $(this).children('div.cards1-icon').find('i').addClass('active')
+
+        });
+
+        $('body').on('keyup', '.error', function() {
+            $(this).removeClass('error');
+        });
+
+        $('body').on('click', '.ubi1', function() {
+            $('.ubi1').removeClass('active');
+            $(this).addClass('active');
+            // $('div.ubi1-icon').find('i').removeClass('active');
+            // $(this).children('div.ubi1-icon').find('i').addClass('active')
+
+        });
+
+
+        //netbanking
+
+
+
+
+        // UPI validation
+        $('body').on('click', '#add_new_upi', function() {
+            $('.new_upi_box').show();
+            $(this).hide();
+            $('.upiRadioSelect').prop('checked', false);
+            $('#new_upi_id').val('');
+            $('#new_upi_id').removeClass('error');
+        })
+        $('body').on('keyup', '#new_upi_id', function() {
+            $('#new_upi_id').removeClass('error');
+            $('.error_upi').hide();
+        })
+
+
+        $('body').on('click', '.upiRadioSelect', function() {
+            $('.error_upi').hide();
+            $('#add_new_upi').show();
+            let val = $(this).val();
+            $('#new_upi_id').val(val);
+            $('.new_upi_box').hide();
+        })
+
+        $('body').on('click', '#upi_pay_btn', function() {
+            $('.error_upi').hide();
+            let selectedUPI = $('#new_upi_id').val();
+            if (!selectedUPI) {
+                $('#new_upi_id').addClass('error');
+                $('.error_upi').show();
+                return false;
+            }
+            // perform backend actions below
+            // alert('upi id ' + selectedUPI)
+            console.log('upi id ' + selectedUPI)
+        });
+
+
+        //upi wallets starts
+
+        //gpay upi
+        $('body').on('click', '#add_new_gupi', function() {
+            $('.new_upi_box').show();
+            $(this).hide();
+            $('.upiRadioSelect').prop('checked', false);
+            $('#new_gupi_id').val('');
+            $('#new_gupi_id').removeClass('error');
+        })
+        $('body').on('keyup', '#new_gupi_id', function() {
+            $('#new_gupi_id').removeClass('error');
+            $('.error_upi').hide();
+        })
+
+
+        $('body').on('click', '.upiRadioSelect', function() {
+            $('.error_upi').hide();
+            $('#add_new_gupi').show();
+            let val = $(this).val();
+            $('#new_gupi_id').val(val);
+            $('.new_upi_box').hide();
+        })
+
+        $('body').on('click', '#upi_gpay_btn', function() {
+            $('.error_upi').hide();
+            let selectedUPI = $('#new_gupi_id').val();
+            if (!selectedUPI) {
+                $('#new_gupi_id').addClass('error');
+                $('.error_upi').show();
+                return false;
+            }
+            // perform backend actions below
+            /// alert('upi id ' + selectedUPI)
+            console.log('upi id ' + selectedUPI)
+        });
+
+
+        //phoneppay upi
+        $('body').on('click', '#add_new_pupi', function() {
+            $('.new_upi_box').show();
+            $(this).hide();
+            $('.upiRadioSelect').prop('checked', false);
+            $('#new_pupi_id').val('');
+            $('#new_pupi_id').removeClass('error');
+        })
+        $('body').on('keyup', '#new_pupi_id', function() {
+            $('#new_pupi_id').removeClass('error');
+            $('.error_upi').hide();
+        })
+
+
+        $('body').on('click', '.upiRadioSelect', function() {
+            $('.error_upi').hide();
+            $('#add_new_pupi').show();
+            let val = $(this).val();
+            $('#new_pupi_id').val(val);
+            $('.new_upi_box').hide();
+        })
+
+        $('body').on('click', '#upi_ppay_btn', function() {
+            $('.error_upi').hide();
+            let selectedUPI = $('#new_pupi_id').val();
+            if (!selectedUPI) {
+                $('#new_pupi_id').addClass('error');
+                $('.error_upi').show();
+                return false;
+            }
+            // perform backend actions below
+            // alert('upi id ' + selectedUPI)
+            console.log('upi id ' + selectedUPI)
+        });
+
+        //paytmpay upi
+        $('body').on('click', '#add_new_ptupi', function() {
+            $('.new_upi_box').show();
+            $(this).hide();
+            $('.upiRadioSelect').prop('checked', false);
+            $('#new_ptupi_id').val('');
+            $('#new_ptupi_id').removeClass('error');
+        })
+        $('body').on('keyup', '#new_ptupi_id', function() {
+            $('#new_ptupi_id').removeClass('error');
+            $('.error_upi').hide();
+        })
+
+
+        $('body').on('click', '.upiRadioSelect', function() {
+            $('.error_upi').hide();
+            $('#add_new_ptupi').show();
+            let val = $(this).val();
+            $('#new_ptupi_id').val(val);
+            $('.new_upi_box').hide();
+        })
+
+        $('body').on('click', '#upi_ptpay_btn', function() {
+            $('.error_upi').hide();
+            let selectedUPI = $('#new_ptupi_id').val();
+            if (!selectedUPI) {
+                $('#new_ptupi_id').addClass('error');
+                $('.error_upi').show();
+                return false;
+            }
+            // perform backend actions below
+            // alert('upi id ' + selectedUPI)
+            console.log('upi id ' + selectedUPI)
+        });
+
+        //upi wallets ends
+
+        // UPI validation
+        // $('body').on('click', '#add_new_upi', function() {
+        //     $('.new_upi_box').show();
+        //     $(this).hide();
+        //         $('.upiRadioSelect').prop('checked', false);
+        //     $('#new_upi_text').val('');
+        //     $('#new_upi_text').removeClass('error');
+        // })
+        // $('body').on('keyup', '#new_upi_text', function() {
+        //     $('#new_upi_text').removeClass('error');
+        //     $('.error_upi').hide();
+        // })
+
+
+        // $('body').on('click', '.upiRadioSelect ', function() {
+        //     $('.error_upi').hide();
+
+        //     let val = $(this).val();
+        //     $('#new_upi_text').val(val);
+        //     $('.new_upi_text_div').hide();
+        // })
+
+        // $('body').on('click', '#upi_pay_btn', function() {
+        //     $('.error_upi').hide();
+        //     let selectedUPI = $('#new_upi_text').val();
+        //     if (!selectedUPI) {
+        //         $('#new_upi_text').addClass('error');
+        //         $('.error_upi').show();
+        //         return false;
+        //     }
+
+        //     alert('upi id ' + selectedUPI)
+        // });
+
+
+        $('.type-text').bind('input', function() {
+            var c = this.selectionStart,
+                r = /[^a-z ]/gi,
+                v = $(this).val();
+            if (r.test(v)) {
+                $(this).val(v.replace(r, ''));
+                c--;
+            }
+            // this.setSelectionRange(c, c);
+        });
+
+        $('.type-number').bind('input', function() {
+            var c = this.selectionStart,
+                r = /[^0-9]/gi,
+                v = $(this).val();
+            if (r.test(v)) {
+                $(this).val(v.replace(r, ''));
+                c--;
+            }
+            //   this.setSelectionRange(c, c);
+        });
+
+
+        // COD validation
+        $('body').on('click', '#cod_pay_btn', function() {
+            let cod_city = $('#cod_city').val();
+            let cod_pin = $('#cod_pin').val()
+            let cod_address = $('#cod_address').val()
+
+            if (cod_city == '') {
+                $('#cod_city').addClass('error');
+            } else if (cod_pin == '') {
+                $('#cod_pin').addClass('error');
+            } else if (cod_address == '') {
+                $('#cod_address').addClass('error');
+            } else {
+                console.log(cod_city);
+                console.log(cod_address);
+                console.log(cod_pin);
+                $('#cod_city').val(null);
+                $('#cod_pin').val(null);
+                $('#cod_address').val(null);
+            }
+
+        })
+
+        // Gpay validation
+        $('body').on('click', '#gpay_pay_btn', function() {
+            let gpay_ref_no = $('#gpay_ref_no').val()
+            if (gpay_ref_no == '') {
+                $('#gpay_ref_no').addClass('error');
+            } else {
+                console.log(gpay_ref_no);
+            }
+        })
+
+        // Bank transfer validation
+        $('body').on('click', '.copyToClipboard', function() {
+            let targetText = $(this).parents('tr').children('td:eq(1)').html();
+            let $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val(targetText).select();
+            document.execCommand("copy");
+            $temp.remove();
+        })
+
+        $('body').on('click', '#bank_transfer_pay_btn', function() {
+            $("#non_icici_transfer").show();
+            $("#bank-tranfersec,#icici_transfer,#upi_transfer").hide();
+        })
+
+        $('body').on('click', '#bank_transfer_pay_now', function() {
+
+            var selectedBanktransfer = $('#sel_1').val()
+            if (selectedBanktransfer == '') {
+                alert('please select bank');
+                $('#sel_1').css('border', '1px solid red');
+            }
+
+        })
+
+        $('body').on('click', '.bank-select', function() {
+            $('#sel_1').css('border', '1px solid transparent');
+        });
+
+
+
+
+        jQuery(function() {
+            jQuery('#showall').click(function() {
+                jQuery('.target').show();
+            });
+
+            jQuery('.single').click(function() {
+                jQuery('.target').hide();
+                jQuery('#div' + $(this).attr('target')).show();
+            });
+        });
+
+
+        //card js starts
+
+        $('.select2input').select2();
+        // Card name only alphabets
+
+        $(".cc-name-input").keypress(function(e) {
+            var key = e.keyCode;
+            if (key >= 48 && key <= 57) {
+                e.preventDefault();
+            }
+        });
+
+
+        $(function() {
+            $('.cc-name-input').keydown(function(e) {
+                if (e.shiftKey || e.ctrlKey || e.altKey) {
+                    // e.preventDefault();
+                } else {
+                    var key = e.keyCode;
+                    if (!((key == 8) || (key == 32) || (key == 46) || (key >= 35 && key <= 40) || (key >= 65 && key <= 90))) {
+                        // e.preventDefault();
+                    }
+                }
+            });
+        });
+
+
+
+
+        $('.cc-cvc-input').on('input', function() {
+            var c = this.selectionStart,
+                r = /[^0-9]/gi,
+                v = $(this).val();
+            if (r.test(v)) {
+                $(this).val(v.replace(r, ''));
+                c--;
+            }
+
+        });
+
+        $('.cc-name-input').bind('input', function() {
+            var c = this.selectionStart,
+                r = /[^a-z ]/gi,
+                v = $(this).val();
+            if (r.test(v)) {
+                $(this).val(v.replace(r, ''));
+                c--;
+            }
+            this.setSelectionRange(c, c);
+        });
+
+
+
+
+        // card number expiry cvv allow only numbers
+
+        let ccNumberInput = document.querySelector('.cc-number-input'),
+            ccNumberPattern = /^\d{0,16}$/g,
+            ccNumberSeparator = " ",
+            ccNumberInputOldValue,
+            ccNumberInputOldCursor,
+
+            ccExpiryInput = document.querySelector('.cc-expiry-input'),
+            ccExpiryPattern = /^\d{0,4}$/g,
+            ccExpirySeparator = "/",
+            ccExpiryInputOldValue,
+            ccExpiryInputOldCursor,
+
+            ccCVCInput = document.querySelector('.cc-cvc-input'),
+            ccCVCPattern = /^\d{0,3}$/g,
+
+            mask = (value, limit, separator) => {
+                var output = [];
+                for (let i = 0; i < value.length; i++) {
+                    if (i !== 0 && i % limit === 0) {
+                        output.push(separator);
+                    }
+
+                    output.push(value[i]);
+                }
+
+                return output.join("");
+            },
+            unmask = (value) => value.replace(/[^\d]/g, ''),
+            checkSeparator = (position, interval) => Math.floor(position / (interval + 1)),
+            ccNumberInputKeyDownHandler = (e) => {
+                let el = e.target;
+                ccNumberInputOldValue = el.value;
+                ccNumberInputOldCursor = el.selectionEnd;
+            },
+            ccNumberInputInputHandler = (e) => {
+                let el = e.target,
+                    newValue = unmask(el.value),
+                    newCursorPosition;
+
+                if (newValue.match(ccNumberPattern)) {
+                    newValue = mask(newValue, 4, ccNumberSeparator);
+
+                    newCursorPosition =
+                        ccNumberInputOldCursor - checkSeparator(ccNumberInputOldCursor, 4) +
+                        checkSeparator(ccNumberInputOldCursor + (newValue.length - ccNumberInputOldValue.length), 4) +
+                        (unmask(newValue).length - unmask(ccNumberInputOldValue).length);
+
+                    el.value = (newValue !== "") ? newValue : "";
+                } else {
+                    el.value = ccNumberInputOldValue;
+                    newCursorPosition = ccNumberInputOldCursor;
+                }
+
+                el.setSelectionRange(newCursorPosition, newCursorPosition);
+
+                highlightCC(el.value);
+            },
+            highlightCC = (ccValue) => {
+                let ccCardType = '',
+                    ccCardTypePatterns = {
+                        amex: /^3/,
+                        visa: /^4/,
+                        mastercard: /^5/,
+                        disc: /^6/,
+
+                        genric: /(^1|^2|^7|^8|^9|^0)/,
+                    };
+
+                for (const cardType in ccCardTypePatterns) {
+                    if (ccCardTypePatterns[cardType].test(ccValue)) {
+                        ccCardType = cardType;
+                        break;
+                    }
+                }
+
+                let activeCC = document.querySelector('.cc-types__img--active'),
+                    newActiveCC = document.querySelector(`.cc-types__img--${ccCardType}`);
+
+                if (activeCC) activeCC.classList.remove('cc-types__img--active');
+                if (newActiveCC) newActiveCC.classList.add('cc-types__img--active');
+            },
+            ccExpiryInputKeyDownHandler = (e) => {
+                let el = e.target;
+                ccExpiryInputOldValue = el.value;
+                ccExpiryInputOldCursor = el.selectionEnd;
+            },
+            ccExpiryInputInputHandler = (e) => {
+                let el = e.target,
+                    newValue = el.value;
+
+                newValue = unmask(newValue);
+                if (newValue.match(ccExpiryPattern)) {
+                    newValue = mask(newValue, 2, ccExpirySeparator);
+                    el.value = newValue;
+                } else {
+                    el.value = ccExpiryInputOldValue;
+                }
+            };
+
+        ccNumberInput.addEventListener('keydown', ccNumberInputKeyDownHandler);
+        ccNumberInput.addEventListener('input', ccNumberInputInputHandler);
+
+        ccExpiryInput.addEventListener('keydown', ccExpiryInputKeyDownHandler);
+        ccExpiryInput.addEventListener('input', ccExpiryInputInputHandler);
+    </script>
+    <script>
+        // error class
+        $('body').on('keyup', '.error', function() {
+            $(this).removeClass('error');
+        });
+
+
+
+        // creditcard pay btn validation
+        $('body').on('click', '#credit_card_pay_btn', function() {
+            var cardName = $('#card_name').val();
+            var cardNumber = $('#card_no').val();
+            var cardExpiry = $('#card_expiry').val();
+            var expirydate = $('#card_expiry');
+            var ccexpiry = expirydate.val();
+            var cardCvv = $('#card_cvv').val();
+            // var cardName = $('#card_name').val();
+            var cc = $('#card_no');
+            var ccval = cc.val();
+            var len = ccval.length;
+            // parseNum = str => +str.replace(/[^.\d]/g, '');
+            // var se = parseNum($("#card_expiry").val());
+            // var se2 = se.toString().length;
+            var today = new Date();
+            var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+            var yyyy = today.getFullYear();
+            data = cardExpiry.split('/');
+
+            var expirynuber = ccexpiry;
+            expirynuber = expirynuber.replace(/[a-z]*/gi, '').trim();
+
+            var expiry = expirynuber.toString().length;
+            if (cardName == '') {
+                $('#card_name').addClass('error');
+            } else if (cardNumber == '' || len < 19) {
+                $('#card_no').addClass('error');
+            } else if ((parseInt(data[1]) == yyyy && parseInt(data[0]) <= mm)) {
+                $('#card_expiry').addClass('error');
+            } else if (expiry < 7) {
+                $('#card_expiry').addClass('error');
+            } else if (cardCvv == '') {
+                $('#card_cvv').addClass('error');
+            } else {
+                console.log('cardName', cardName, 'cardNumber', cardNumber, 'cardExpiry', cardExpiry, 'cardCvv', cardCvv)
+                $('#card_name').val(null);
+                $('#card_no').val(null);
+                $('#card_expiry').val(null);
+                $('#card_cvv').val(null);
+            }
+            //card
+
+
+
+
+        });
+
+
+
+
+
+
+
+
+
+
+        //card js ends
+
+        // // Add active class to the current button (highlight it)
+        // var header = document.getElementById("myDIV");
+        // var btns = header.getElementsByClassName("btn");
+        // for (var i = 0; i < btns.length; i++) {
+        //     btns[i].addEventListener("click", function() {
+        //         var current = document.getElementsByClassName("active");
+        //         current[0].className = current[0].className.replace(" active", "");
+        //         this.className += " active";
+        //     });
+        // }
+        $('body').on('click', '.cardlist .btn', function() {
+            $('.cardlist .btn').removeClass('active');
+            $(this).addClass('active');
+
+            //card
+            $('#card_name').val(null);
+            $('#card_no').val(null);
+            $('#card_expiry').val(null);
+            $('#card_cvv').val(null);
+
+            //cod
+
+            $('#cod_city').val(null);
+            $('#cod_pin').val(null);
+            $('#cod_address').val(null);
+
+        });
+    </script>
+
+    <script>
+        $(".card_4").on('click', function() {
+            $("#bank-tranfersec").show();
+            $("#non_icici_transfer,#icici_transfer,#upi_transfer").hide();
+        });
+        $(".non_icici_bank").on('click', function() {
+            $("#non_icici_transfer").show();
+            $("#bank-tranfersec,#icici_transfer,#upi_transfer").hide();
+        });
+        $(".icici_bank").on('click', function() {
+            $("#icici_transfer").show();
+            $("#bank-tranfersec,#non_icici_transfer,#upi_transfer").hide();
+        });
+        $("#bk_opt_upi").on('click', function() {
+            $("#upi_transfer").show();
+            $("#bank-tranfersec,#non_icici_transfer,#icici_transfer").hide();
+        });
+
+
+        $('body').on('click', '.copyToClipboard', function() {
+
+            $(this).addClass('copied-id').find('span').html('copied');
+            // $(this).children('i').removeClass('fa-clone').addClass('fa-check')
+
+            setTimeout(function() {
+                $('.copyToClipboard').removeClass('copied-id');
+                // .children('i').removeClass('fa-check').addClass('fa-clone');
+
+                $('.copyToClipboard').find('span').html('Copy');
+            }, 1000);
+        });
+
+        var inputEmail = document.querySelector('input.inputname');
+        inputEmail.onkeyup = function(e) {
+            var max = 25;
+            if (inputEmail.value.length > max) {
+                inputEmail.value = inputEmail.value.substring(0, max);
+
+            }
+        };
+    </script>
+
+
+</body>
+
+</html>
